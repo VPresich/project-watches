@@ -1,0 +1,162 @@
+.adv-section {
+  max-width: 335px;
+  border-radius: 30px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 100%
+    ),
+    url('/img/adv/adv-mobile@1x.png');
+
+  background-color: var(--main);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+}
+
+.adv-section-container {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.adv-text {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--background);
+  margin-bottom: 28px;
+}
+
+.adv-accent {
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.adv-link {
+  font-family: inherit;
+  width: 160px;
+  height: 48px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  color: var(--background);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adv-link:hover,
+.adv-link:focus {
+  background-color: var(--background);
+  color: var(--main);
+}
+
+.adv-link-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 375px),
+  screen and (min-resolution: 2dppx) and (max-width: 375px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 375px) {
+  .section-about {
+    background-image: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 100%
+      ),
+      url('/img/adv/adv-mobile@2x.png');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .adv-section {
+    max-width: 704px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 100%
+      ),
+      url('/img/adv/adv-tablet@1x.png');
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .adv-section-container {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .adv-text {
+    font-size: 48px;
+    line-height: 0.92;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .section-about {
+    background-image: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 100%
+      ),
+      url('/img/adv/adv-tablet@2x.png');
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .adv-section {
+    max-width: 1150px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 100%
+      ),
+      url('/img/adv/adv-desktop@1x.png');
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 83px;
+    padding-bottom: 83px;
+  }
+
+  .adv-section-container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .adv-text-link-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .adv-text {
+    width: 690px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 1280px),
+  screen and (min-resolution: 2dppx) and (max-width: 1280px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 1280px) {
+  .section-about {
+    background-image: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 100%
+      ),
+      url('/img/adv/adv-desktop@2x.png');
+  }
+}

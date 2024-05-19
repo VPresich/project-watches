@@ -16,7 +16,7 @@
 
     
     <script type="module" crossorigin src="/project-watches/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-watches/assets/index-7039e637.css">
+    <link rel="stylesheet" href="/project-watches/assets/index-6f6b3136.css">
   </head>
   <body>
     <header class="header-page fixed-menu">
@@ -188,7 +188,91 @@
   </div>
 </section>
 
-      
+      <section class="section">
+  <div class="container">
+    <h2 class="section-title contact-section-title">Contact Us</h2>
+    <div class="contact-container">
+      <div class="contact-form-wrapper">
+        <p class="contact-text">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <form class="contact-form">
+          <input
+            class="contact-form-input"
+            type="text"
+            id="user-name"
+            name="user_name"
+            placeholder="Name"
+            pattern="[a-zA-Za-яА-ЯіІїЇєЄґҐ']{1,}"
+            title="Name should contain only letters and apostrophes"
+            required
+          />
+
+          <input
+            class="contact-form-input"
+            type="email"
+            id="user-email"
+            placeholder="Email"
+            name="user_email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,8}"
+            title="Please enter a valid email address"
+            required
+          />
+
+          <input
+            class="contact-form-input"
+            type="tel"
+            id="user-phone"
+            placeholder="+38"
+            name="user_phone"
+            pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+            title="Format for input number +380-XX-XXX-XX-XX"
+            required
+          />
+
+          <textarea
+            class="contact-form-input contact-form-comment"
+            name="user_comment"
+            id="user-comment"
+            placeholder="Comment"
+          ></textarea>
+
+          <button
+            class="contact-form-send-button"
+            type="submit"
+            name="btn_send"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+      <div class="contact-img-wrapper">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/project-watches/assets/contact-desktop@1x-1ad43375.jpg 1x, /project-watches/assets/contact-desktop@2x-7e1e3b90.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/project-watches/assets/contact-tablet@1x-40ea6583.jpg 1x, /project-watches/assets/contact-tablet@2x-ec195c11.jpg 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/project-watches/assets/contact-mobile@1x-0b0b88d5.jpg 1x, /project-watches/assets/contact-mobile@2x-c45fdff2.jpg 2x"
+          />
+          <img
+            class="contact-img"
+            src="/project-watches/assets/contact-mobile@1x-0b0b88d5.jpg"
+            alt="Watch photo"
+          />
+        </picture>
+      </div>
+    </div>
+    <div id="id-footer"></div>
+  </div>
+</section>
+
     </main>
     <section class="section footer-section">
   <div class="container">

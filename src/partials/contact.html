@@ -1,0 +1,93 @@
+<section class="section">
+  <div class="container">
+    <h2 class="section-title contact-section-title">Contact Us</h2>
+    <div class="contact-container">
+      <div class="contact-form-wrapper">
+        <p class="contact-text">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <form class="contact-form">
+          <input
+            class="contact-form-input"
+            type="text"
+            id="user-name"
+            name="user_name"
+            placeholder="Name"
+            pattern="[a-zA-Za-яА-ЯіІїЇєЄґҐ']{1,}"
+            title="Name should contain only letters and apostrophes"
+            required
+          />
+
+          <input
+            class="contact-form-input"
+            type="email"
+            id="user-email"
+            placeholder="Email"
+            name="user_email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,8}"
+            title="Please enter a valid email address"
+            required
+          />
+
+          <input
+            class="contact-form-input"
+            type="tel"
+            id="user-phone"
+            placeholder="+38"
+            name="user_phone"
+            pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+            title="Format for input number +380-XX-XXX-XX-XX"
+            required
+          />
+
+          <textarea
+            class="contact-form-input contact-form-comment"
+            name="user_comment"
+            id="user-comment"
+            placeholder="Comment"
+          ></textarea>
+
+          <button
+            class="contact-form-send-button"
+            type="submit"
+            name="btn_send"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+      <div class="contact-img-wrapper">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/contact/contact-desktop@1x.jpg 1x,
+              ./img/contact/contact-desktop@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/contact/contact-tablet@1x.jpg 1x,
+              ./img/contact/contact-tablet@2x.jpg 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/contact/contact-mobile@1x.jpg 1x,
+              ./img/contact/contact-mobile@2x.jpg 2x
+            "
+          />
+          <img
+            class="contact-img"
+            src="./img/contact/contact-mobile@1x.jpg"
+            alt="Watch photo"
+          />
+        </picture>
+      </div>
+    </div>
+    <div id="id-footer"></div>
+  </div>
+</section>
